@@ -9,11 +9,11 @@ def dice():
         if user.lower() in {'yes', 'y'}:
             dice_number = input("How many? (1/2): ")
             if dice_number.lower() in ['1', 'one']:
-                num = random.randrange(1, 6)
+                num = random.randrange(1, 7)
                 print(f"Dice rolled! You've got: {num}")
             elif dice_number in ['2', 'two']:
-                num = random.randrange(1, 6)
-                num2 = random.randrange(1, 6)
+                num = random.randrange(1, 7)
+                num2 = random.randrange(1, 7)
                 print(f"Dices rolled! You've got: {num} and {num2}")
                 print(f"That will be: {num+num2}")
             else:
@@ -21,7 +21,7 @@ def dice():
         # The User Decides = N (no)
         elif user == 'n':
             print("See you next time!")
-            continue
+            exit()
         # Invalid prompt
         else:
             print("Invalid answer, try again:\n ")
